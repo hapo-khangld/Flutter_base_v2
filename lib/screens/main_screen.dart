@@ -1,6 +1,6 @@
+import 'package:dayaway/core/utils/log.dart';
+import 'package:dayaway/resources/r.dart';
 import 'package:flutter/material.dart';
-
-import '../resources/styles.dart';
 
 class MainScreen extends StatelessWidget {
   const MainScreen({Key? key}) : super(key: key);

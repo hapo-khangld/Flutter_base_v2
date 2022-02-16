@@ -1,8 +1,8 @@
-import '../core/utils/log.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_platform_widgets/flutter_platform_widgets.dart';
 
+import '../core/utils/screen_utils.dart';
 import '../resources/R.dart';
 import '../screens/commons/no_content_found_screen.dart';
 import '../screens/main_screen.dart';
@@ -40,7 +40,11 @@ class AppRouter {
 
   static void initResource(BuildContext context) {
     try {
-      R.init(context);
+      ScreenUtils.instance.init(
+        context,
+        designSize: R.designSize,
+        allowFontScaling: true,
+      );
     } catch (e) {
       // ignore
     }

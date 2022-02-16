@@ -1,3 +1,4 @@
+import 'package:dayaway/resources/images.dart';
 import 'package:flutter/material.dart';
 
 import '../core/constants.dart';
@@ -13,10 +14,14 @@ class R {
 
   static final StringDef strings = StringDef.instance;
   static final ThemeDef themes = ThemeDef.instance;
+  static final ScreenUtils screenUtils = ScreenUtils.instance;
+  static final ImageDef images = ImageDef.instance;
 
   /// Localization config
   static const String localizationPath = 'assets/translations';
   static const List<Locale> locales = [Locale('en'), Locale('vi')];
+
+  // Design Size config
   static const designSize = Size(375, 667);
 
   // Env

@@ -1,11 +1,11 @@
 import 'dart:io';
 
 import 'package:cached_network_image/cached_network_image.dart';
+import 'package:dayaway/core/utils/screen_utils.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 
 import '../core/utils/extensions.dart';
-import '../resources/R.dart';
 import '../resources/styles.dart';
 
 abstract class AppImageCacheManager {
@@ -246,7 +246,7 @@ class ImgView {
     Widget view() {
       try {
         if (null == height && null != ratio) {
-          width ??= R.screenUtil.screenWidth;
+          width ??= ScreenUtils.instance.screenWidth;
           height = width! * ratio;
         }
         if (src.endsWith('svg')) {
