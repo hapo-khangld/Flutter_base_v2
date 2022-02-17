@@ -62,7 +62,6 @@ class NutsActivityIndicator extends StatefulWidget {
   /// Defaults to 1 second.
   final Duration animationDuration;
 
-  /// TODO: what is this width value really?
   final double relativeWidth;
 
   /// Radius ratio tells where the rectangles start.

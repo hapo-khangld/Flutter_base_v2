@@ -8,17 +8,17 @@ abstract class NetWorkModule {
   ///
   /// Calling it multiple times will return the same instance.
 
-  static Map<String, dynamic> _getHeader() {
-    // return {
-    //   "Authorization": kmApiDomain.authorization,
-    //   "client-version": kmApiDomain.clientVersion,
-    //   "content-type": kmApiDomain.contentType,
-    //   "language": getDisplayLanguageCode(kmDisplayLanguage),
-    //   "Accept-Encoding": "gzip",
-    // };
+  // static Map<String, dynamic> _getHeader() {
+  // return {
+  //   "Authorization": kmApiDomain.authorization,
+  //   "client-version": kmApiDomain.clientVersion,
+  //   "content-type": kmApiDomain.contentType,
+  //   "language": getDisplayLanguageCode(kmDisplayLanguage),
+  //   "Accept-Encoding": "gzip",
+  // };
 
-    return {};
-  }
+  // return {};
+  // }
 
   static GraphQLClient providerGrapQLCient(
       SharedPreferenceService sharedPreferenceService) {

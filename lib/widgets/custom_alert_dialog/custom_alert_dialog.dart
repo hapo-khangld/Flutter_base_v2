@@ -33,9 +33,8 @@ class _CustomAlertDialog extends StatelessWidget {
   final String secondButtonText;
   final Function? secondButtonFunction;
 
-  final double _radius = 7;
+  final double _radius = 2;
   final double _spacing = 8.0;
-  final double _buttonHeight = 50.0;
   final TextAlign titleAlign;
   final TextAlign contentAlign;
   final bool allowPopScope;
@@ -139,7 +138,7 @@ class _CustomAlertDialog extends StatelessWidget {
           Expanded(
             child: TextButton(
               onPressed: () {
-                firstButtonFunction!.call();
+                firstButtonFunction.call();
               },
               child: Text(
                 firstButtonText,
@@ -160,7 +159,7 @@ class _CustomAlertDialog extends StatelessWidget {
     }
 
     Widget element = Container(
-      constraints: const BoxConstraints(maxWidth: 350),
+      constraints: BoxConstraints(maxWidth: R.screenUtils.screenWidth * 0.85),
       decoration: BoxDecoration(
         borderRadius: BorderRadius.all(Radius.circular(_radius)),
         color: Colors.white,
@@ -215,7 +214,7 @@ Future<T?> showCustomSuccessAlertDialog<T>(
         ).animate(
           CurvedAnimation(
             parent: anim1,
-            curve: Curves.fastOutSlowIn,
+            curve: Curves.linear,
           ),
         ),
         child: child,

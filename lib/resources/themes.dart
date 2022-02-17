@@ -1,4 +1,3 @@
-import 'package:dayaway/core/utils/extensions.dart';
 import 'package:flutter/material.dart';
 
 import 'numbers.dart';
@@ -44,10 +43,10 @@ class ThemeDef {
       primary: ColorsDef.white,
       backgroundColor: ColorsDef.kPrimary,
       alignment: Alignment.center,
-      padding: const EdgeInsets.all(dimen_12),
+      padding: const EdgeInsets.all(dimen_10),
       textStyle: TextStyleDef.textButtonTextStyle,
       shape: RoundedRectangleBorder(
-        borderRadius: BorderRadius.circular(dimen_4),
+        borderRadius: BorderRadius.circular(dimen_2),
       ),
       onSurface: ColorsDef.white,
     ),
@@ -58,14 +57,14 @@ class ThemeDef {
     style: OutlinedButton.styleFrom(
       primary: ColorsDef.black,
       alignment: Alignment.center,
-      padding: const EdgeInsets.all(dimen_12),
+      padding: const EdgeInsets.all(dimen_10),
       textStyle: TextStyleDef.textButtonTextStyle,
       side: const BorderSide(
         width: dimen_1,
         color: ColorsDef.black,
       ),
       shape: RoundedRectangleBorder(
-        borderRadius: BorderRadius.circular(dimen_4),
+        borderRadius: BorderRadius.circular(dimen_2),
       ),
     ),
   );

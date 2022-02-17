@@ -1,4 +1,3 @@
-import 'package:dayaway/core/utils/extensions.dart';
 import 'package:flutter/material.dart';
 
 import 'numbers.dart';
@@ -62,6 +61,7 @@ abstract class TextStyleDef {
     color: ColorsDef.kPrimary80,
     fontSize: dimen_14,
     fontWeight: FontWeight.w300,
+    height: 1.3,
   );
   //
 }
