@@ -8,6 +8,7 @@ import 'core/helpers.dart';
 import 'core/utils/log.dart';
 import 'day_away.dart';
 import 'resources/r.dart';
+import 'di/dependency_injection.dart' as di;
 
 void main() async {
   WidgetsBinding widgetsBinding = WidgetsFlutterBinding.ensureInitialized();
@@ -23,6 +24,10 @@ void main() async {
 
     // Localization
     Helper.initEasyLocalization(),
+
+    // Dependency init
+    di.init(),
+
     Future.delayed(const Duration(seconds: 2))
   ]);
 

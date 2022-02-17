@@ -1,8 +1,8 @@
-import 'package:dayaway/core/utils/log.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 import '../route/navigation_manager.dart';
+import '../utils/log.dart';
 import 'base_bloc_event.dart';
 import 'base_bloc_state.dart';
 

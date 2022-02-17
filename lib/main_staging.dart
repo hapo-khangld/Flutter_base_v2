@@ -7,6 +7,7 @@ import 'core/constants.dart';
 import 'core/helpers.dart';
 import 'core/utils/log.dart';
 import 'day_away.dart';
+import 'di/dependency_injection.dart' as di;
 import 'resources/r.dart';
 
 void main() async {
@@ -23,6 +24,10 @@ void main() async {
 
     // Localization
     Helper.initEasyLocalization(),
+
+    // Dependency init
+    di.init(),
+
     Future.delayed(const Duration(seconds: 2))
   ]);
 
