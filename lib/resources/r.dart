@@ -1,8 +1,8 @@
-import 'package:dayaway/resources/images.dart';
 import 'package:flutter/material.dart';
 
 import '../core/constants.dart';
 import '../core/utils/screen_utils.dart';
+import 'images.dart';
 import 'strings.dart';
 import 'themes.dart';
 
@@ -26,6 +26,16 @@ class R {
 
   // Env
   static late EnvType env;
+
+  // Https Link
+  static String get httpLink {
+    if (env == EnvType.dev) {
+      return "https://dawsvc-platform-dev.dayaway.sg/graphql";
+    } else if (env == EnvType.qa) {
+      return "https://dawsvc-platform-qa.dayaway.sg/graphiql";
+    }
+    return "";
+  }
 
   static void init(BuildContext context) {
     /// Init screen utils
