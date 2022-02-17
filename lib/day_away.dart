@@ -12,13 +12,14 @@ class DayAway extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
+    // Remove plash Screen
     FlutterNativeSplash.remove();
 
     return MaterialApp(
       title: R.appName,
       localizationsDelegates: context.localizationDelegates,
       supportedLocales: context.supportedLocales,
-      debugShowCheckedModeBanner: R.env != EnvType.production,
+      debugShowCheckedModeBanner: R.env == EnvType.dev,
       locale: context.locale,
       theme: R.themes.lightTheme,
       themeMode: ThemeMode.light,
