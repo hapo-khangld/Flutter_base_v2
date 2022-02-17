@@ -5,8 +5,8 @@ import 'package:dayaway/core/utils/screen_utils.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 
-import '../core/utils/extensions.dart';
-import '../resources/styles.dart';
+import '../../core/utils/extensions.dart';
+import '../../resources/styles.dart';
 
 abstract class AppImageCacheManager {
   static const bool enableCache = true;

@@ -1,3 +1,4 @@
+import 'package:dayaway/core/utils/extensions.dart';
 import 'package:flutter/material.dart';
 import 'numbers.dart';
 
@@ -39,6 +40,27 @@ abstract class ColorsDef {
 abstract class TextStyleDef {
   //
   static TextStyle textButtonTextStyle = const TextStyle(
-      color: ColorsDef.white, fontSize: dimen_16, fontWeight: FontWeight.w500);
+    color: ColorsDef.white,
+    fontSize: dimen_16,
+    fontWeight: FontWeight.w400,
+  );
+
+  static TextStyle textContentErrorTextStyle = const TextStyle(
+    color: ColorsDef.kPrimary,
+    fontSize: dimen_16,
+    fontWeight: FontWeight.w300,
+  );
+
+  static TextStyle textTitleTextStyle = const TextStyle(
+    color: ColorsDef.kPrimary,
+    fontSize: dimen_18,
+    fontWeight: FontWeight.w500,
+  );
+
+  static TextStyle textBodyTextStyle = const TextStyle(
+    color: ColorsDef.kPrimary80,
+    fontSize: dimen_14,
+    fontWeight: FontWeight.w300,
+  );
   //
 }

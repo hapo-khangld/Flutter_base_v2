@@ -1,4 +1,5 @@
 import 'package:dayaway/core/utils/log.dart';
+import 'package:dayaway/widgets/widgets.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:pull_to_refresh/pull_to_refresh.dart';
@@ -114,7 +115,7 @@ abstract class ComponentState<W extends StatefulWidget, E extends BaseBlocEvent,
           minWidth: double.infinity,
           minHeight: double.infinity,
         ),
-        child: Loading.screenLoadingSpinner(),
+        child: const NutsActivityIndicator(),
       ),
     );
   }
