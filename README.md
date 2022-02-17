@@ -41,21 +41,28 @@ flutter pub run build_runner build --delete-conflicting-outputs
 		"configurations":
 		 [
 			{
-				"name": "awesome_app_base dev",
+				"name": "dayaway dev",
 				"request": "launch",
 				"type": "dart",
 				"program": "lib/main.dart",
 				"args": ["--flavor", "dev", "--target", "lib/main.dart"]
 			},
 			{
-				"name": "awesome_app_base staging",
+				"name": "dayaway qa",
+				"request": "launch",
+				"type": "dart",
+				"program": "lib/main.dart",
+				"args": ["--flavor", "qa", "--target", "lib/main_qa.dart"]
+			},
+			{
+				"name": "dayaway staging",
 				"request": "launch",
 				"type": "dart",
 				"program": "lib/main_staging.dart",
 				"args": ["--flavor", "staging", "--target", "lib/main_staging.dart"]
 			},
 			{
-				"name": "awesome_app_base production",
+				"name": "dayaway production",
 				"request": "launch",
 				"type": "dart",
 				"program": "lib/main_production.dart",
@@ -65,6 +72,7 @@ flutter pub run build_runner build --delete-conflicting-outputs
 
 - Run by terminal:
 	- Dev : flutter run --target lib/main.dart --flavor dev
+	- Qa : flutter run --target lib/main_qa.dart --flavor qa
 	- Staging : flutter run --target lib/main_staging.dart --flavor staging
 	- Production : flutter run --target lib/main_production.dart --flavor production
 

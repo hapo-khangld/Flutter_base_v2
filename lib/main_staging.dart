@@ -14,7 +14,7 @@ void main() async {
   FlutterNativeSplash.preserve(widgetsBinding: widgetsBinding);
 
   /// Init Env
-  R.env = EnvType.dev;
+  R.env = EnvType.staging;
   Log.debug(R.env, title: "Environment");
 
   // Init core library
